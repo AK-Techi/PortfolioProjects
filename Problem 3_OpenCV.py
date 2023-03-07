@@ -1,52 +1,28 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[61]:
-
-
 import cv2
 #import pandas as pd
 #import numpy as np
 import os
 
 
-# In[62]:
-
-
 vid = cv2.VideoCapture("C:\\Users\\kumar\\pyproj\\video.avi")
-
-
-# In[63]:
 
 
 vid.get(cv2.CAP_PROP_FRAME_COUNT)
 
 
-# In[64]:
-
-
 vid.get(cv2.CAP_PROP_FPS)
-
-
-# In[65]:
 
 
 1796/29.0
 
 
-# In[66]:
-
-
 29*30
 
 
-# In[67]:
-
-
 29*35
-
-
-# In[68]:
 
 
 #main code
@@ -62,9 +38,6 @@ while (True):
     #cv2.imshow("Output", frame)
     cv2.imwrite('./data' + '/frame' + str(currentframe) + '.png', frame)
     currentframe +=1
-
-
-# In[73]:
 
 
 from os.path import isfile, join
